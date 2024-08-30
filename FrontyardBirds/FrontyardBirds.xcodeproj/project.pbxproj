@@ -84,6 +84,7 @@
 		AFF48B8E2C81ACDE005D45D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF48B902C81ACDE005D45D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF48B912C81ACDE005D45D9 /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
+		AFF48BB32C81F615005D45D9 /* FrontyardBirdsData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FrontyardBirdsData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 		AFF48B1A2C819F8B005D45D9 = {
 			isa = PBXGroup;
 			children = (
+				AFF48BB32C81F615005D45D9 /* FrontyardBirdsData */,
 				AFF48B252C819F8B005D45D9 /* Multiplatform */,
 				AFF48B502C81A824005D45D9 /* Watch */,
 				AFF48B872C81ACDD005D45D9 /* Widgets */,
