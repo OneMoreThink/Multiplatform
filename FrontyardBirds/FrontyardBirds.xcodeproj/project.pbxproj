@@ -10,7 +10,35 @@
 		AFF48B272C819F8B005D45D9 /* FrontyardBirdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF48B262C819F8B005D45D9 /* FrontyardBirdsApp.swift */; };
 		AFF48B292C819F8B005D45D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF48B282C819F8B005D45D9 /* ContentView.swift */; };
 		AFF48B2B2C819F8C005D45D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF48B2A2C819F8C005D45D9 /* Assets.xcassets */; };
+		AFF48B522C81A824005D45D9 /* FrontyardBirdsWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF48B512C81A824005D45D9 /* FrontyardBirdsWatchApp.swift */; };
+		AFF48B542C81A824005D45D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF48B532C81A824005D45D9 /* ContentView.swift */; };
+		AFF48B562C81A826005D45D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF48B552C81A826005D45D9 /* Assets.xcassets */; };
+		AFF48B5C2C81A826005D45D9 /* FrontyardBirds Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFF48B4F2C81A824005D45D9 /* FrontyardBirds Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF48B5A2C81A826005D45D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF48B1B2C819F8B005D45D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF48B4E2C81A824005D45D9;
+			remoteInfo = "FrontyardBirds Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFF48B5D2C81A826005D45D9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AFF48B5C2C81A826005D45D9 /* FrontyardBirds Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AFF48B232C819F8B005D45D9 /* FrontyardBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrontyardBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,10 +46,21 @@
 		AFF48B282C819F8B005D45D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFF48B2A2C819F8C005D45D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF48B2C2C819F8C005D45D9 /* Multiplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multiplatform.entitlements; sourceTree = "<group>"; };
+		AFF48B4F2C81A824005D45D9 /* FrontyardBirds Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FrontyardBirds Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF48B512C81A824005D45D9 /* FrontyardBirdsWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontyardBirdsWatchApp.swift; sourceTree = "<group>"; };
+		AFF48B532C81A824005D45D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFF48B552C81A826005D45D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AFF48B202C819F8B005D45D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF48B4C2C81A824005D45D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF48B252C819F8B005D45D9 /* Multiplatform */,
+				AFF48B502C81A824005D45D9 /* Watch */,
 				AFF48B242C819F8B005D45D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF48B232C819F8B005D45D9 /* FrontyardBirds.app */,
+				AFF48B4F2C81A824005D45D9 /* FrontyardBirds Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +99,16 @@
 			path = Multiplatform;
 			sourceTree = "<group>";
 		};
+		AFF48B502C81A824005D45D9 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				AFF48B512C81A824005D45D9 /* FrontyardBirdsWatchApp.swift */,
+				AFF48B532C81A824005D45D9 /* ContentView.swift */,
+				AFF48B552C81A826005D45D9 /* Assets.xcassets */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,14 +119,33 @@
 				AFF48B1F2C819F8B005D45D9 /* Sources */,
 				AFF48B202C819F8B005D45D9 /* Frameworks */,
 				AFF48B212C819F8B005D45D9 /* Resources */,
+				AFF48B5D2C81A826005D45D9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF48B5B2C81A826005D45D9 /* PBXTargetDependency */,
+			);
+			name = FrontyardBirds;
+			productName = FrontyardBirds;
+			productReference = AFF48B232C819F8B005D45D9 /* FrontyardBirds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFF48B4E2C81A824005D45D9 /* FrontyardBirds Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF48B602C81A826005D45D9 /* Build configuration list for PBXNativeTarget "FrontyardBirds Watch Watch App" */;
+			buildPhases = (
+				AFF48B4B2C81A824005D45D9 /* Sources */,
+				AFF48B4C2C81A824005D45D9 /* Frameworks */,
+				AFF48B4D2C81A824005D45D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FrontyardBirds;
-			productName = FrontyardBirds;
-			productReference = AFF48B232C819F8B005D45D9 /* FrontyardBirds.app */;
+			name = "FrontyardBirds Watch Watch App";
+			productName = "FrontyardBirds Watch Watch App";
+			productReference = AFF48B4F2C81A824005D45D9 /* FrontyardBirds Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -89,6 +159,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					AFF48B222C819F8B005D45D9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AFF48B4E2C81A824005D45D9 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -107,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				AFF48B222C819F8B005D45D9 /* FrontyardBirds */,
+				AFF48B4E2C81A824005D45D9 /* FrontyardBirds Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -117,6 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF48B2B2C819F8C005D45D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF48B4D2C81A824005D45D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF48B562C81A826005D45D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +214,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFF48B4B2C81A824005D45D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF48B542C81A824005D45D9 /* ContentView.swift in Sources */,
+				AFF48B522C81A824005D45D9 /* FrontyardBirdsWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFF48B5B2C81A826005D45D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF48B4E2C81A824005D45D9 /* FrontyardBirds Watch Watch App */;
+			targetProxy = AFF48B5A2C81A826005D45D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AFF48B302C819F8C005D45D9 /* Debug */ = {
@@ -252,6 +351,7 @@
 		AFF48B332C819F8C005D45D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;
@@ -290,6 +390,7 @@
 		AFF48B342C819F8C005D45D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;
@@ -325,6 +426,67 @@
 			};
 			name = Release;
 		};
+		AFF48B5E2C81A826005D45D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZWTS2P7AH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FrontyardBirds Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.onemorethink.FrontyardBirds;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onemorethink.FrontyardBirds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		AFF48B5F2C81A826005D45D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZWTS2P7AH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FrontyardBirds Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.onemorethink.FrontyardBirds;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onemorethink.FrontyardBirds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +504,15 @@
 			buildConfigurations = (
 				AFF48B332C819F8C005D45D9 /* Debug */,
 				AFF48B342C819F8C005D45D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF48B602C81A826005D45D9 /* Build configuration list for PBXNativeTarget "FrontyardBirds Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF48B5E2C81A826005D45D9 /* Debug */,
+				AFF48B5F2C81A826005D45D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
